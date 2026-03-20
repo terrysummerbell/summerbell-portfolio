@@ -2,18 +2,16 @@ import { BlogPosts } from 'app/components/posts'
 
 export default function Page() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
+    <section className="space-y-8">
+      <header className="text-left">
+        <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+          Portfolio
+        </p>
+        <h1 className="mt-2 text-3xl font-semibold tracking-tight">Your Name</h1>
+      </header>
+
+      <div className="space-y-4">
+        <h2 className="text-xl font-semibold tracking-tight">Articles</h2>
         <BlogPosts />
       </div>
     </section>
